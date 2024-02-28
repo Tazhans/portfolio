@@ -112,21 +112,23 @@
             </div>
             <div class="col">
                 <div class="contact-me-form pt-5">
-                    <div class="mb-2">
-                        <label for="FormControl1" class="form-label">Full Name</label>
-                        <input type="email" class="form-control border-info" id="FormControlInput1" placeholder="Enter Name">
-                    </div>
-                    <div class="mb-2">
-                        <label for="FormControl2" class="form-label">Email address</label>
-                        <input type="email" class="form-control border-info" id="FormControlInput1" placeholder="Enter Email">
-                    </div>
-                    <div class="mb-2">
-                        <label for="FormControlTextarea1" class="form-label">Message</label>
-                        <textarea class="form-control border-info" id="FormControlTextarea1" rows="3" placeholder="Enter Message"></textarea>
-                    </div>
-                    <button class="contact-me-btn mt-3">Send Message</button>
+                    <form action="https://formspree.io/f/xbjnyawn" method="POST" onsubmit="return validateForm()">
+                        <div class="mb-2">
+                            <label for="FormControl1" class="form-label">Full Name</label>
+                            <input type="text" class="form-control border-info" id="FormControlInput1" name="Name" placeholder="Enter Name" required>
+                        </div>
+                        <div class="mb-2">
+                            <label for="FormControl2" class="form-label">Email address</label>
+                            <input type="email" class="form-control border-info" id="FormControlInput2" name="Email" placeholder="Enter Email" required>
+                        </div>
+                        <div class="mb-2">
+                            <label for="FormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control border-info" id="FormControlTextarea1" rows="3" name="Message" placeholder="Enter Message" required></textarea>
+                        </div>
+                        <button type="submit" class="contact-me-btn mt-3">Send Message</button>
+                    </form>
                 </div>    
-            </div>
+            </div>            
         </div>
     </div>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
