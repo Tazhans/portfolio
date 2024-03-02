@@ -443,14 +443,16 @@ body {
     }
 
     .about-me-container .image-container {
-        height: 28vh;
+        /* height: 28vh;
         width: 60%;
         border-radius: 50%;
         border: 1px solid #02DAC5;
         background-image: url(/images/dev_image.jpg);
         background-size: cover;
         background-position: center;
-        margin-bottom: 20px;
+        margin-bottom: 20px; */
+
+        display: none;
     }
 
     .about-me-section .col {
