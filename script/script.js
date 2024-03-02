@@ -6,7 +6,7 @@ function createStar() {
     document.body.appendChild(star);
 }
 
-setInterval(createStar, 400);
+setInterval(createStar, 500);
 
 function validateForm() {
     let name = document.getElementById("FormControlInput1").value;
